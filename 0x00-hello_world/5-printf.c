@@ -3,6 +3,7 @@
 /**
  * main - Enrty point
  *
+ * Description: Print a string using printf()
  * Return: Always 0 (Success)
  */
 int main(void)
