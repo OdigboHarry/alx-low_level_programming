@@ -5,7 +5,7 @@
  *
  * Description: A program that prints all the alphabets using putchar
  *
- * Return: 1 Always(Success)
+ * Return: 0 Always(Success)
  */
 int main(void)
 {
@@ -18,5 +18,5 @@ int main(void)
 	}
 	printf("\n");
 
-	return (1);
+	return (0);
 }
