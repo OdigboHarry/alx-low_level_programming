@@ -22,11 +22,10 @@ int main(void)
 		}
 		else
 		{
-			putchar('$');
+			putchar('\n');
 		}
 		c++;
 	}
-	printf("\n");
 
 	return (0);
 }
