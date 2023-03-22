@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- *
+ * _putchar - A function that prints _putchar
  * Description: A program that prints _putchar using the
  * function _putchar
  *
@@ -14,3 +14,9 @@ int main(void)
 	_putchar(putchar);
 	return (0);
 }
+
+void _putchar(void)
+{
+	printf("_putchar\n");
+}
+
