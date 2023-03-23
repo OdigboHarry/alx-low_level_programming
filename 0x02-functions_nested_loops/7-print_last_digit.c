@@ -10,7 +10,7 @@ int print_last_digit(int n)
 {
 	if (n > 0)
 	{
-		while (n > 10)
+		while (n >= 10)
 		{
 			n %= 10;
 		}
@@ -20,7 +20,7 @@ int print_last_digit(int n)
 	else if (n < 0)
 	{
 		n *= -1;
-		while (n > 10)
+		while (n >= 10)
 		{
 			n %= 10;
 		}
