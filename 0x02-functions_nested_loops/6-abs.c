@@ -5,7 +5,7 @@
  * _abs - A function that prints the absolute value of an integer
  * @n: formal parameter that holds the arguments of the actual parameter from
  * the main function
- * Return: 0 Always(Success)
+ * Return: n Always(Success)
  */
 int _abs(int n)
 {
