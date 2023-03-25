@@ -8,28 +8,30 @@
  */
 int print_last_digit(int n)
 {
-	if (n > 0)
+	long N = n;
+
+	if (N > 0)
 	{
-		while (n >= 10)
+		while (N >= 10)
 		{
-			n %= 10;
+			N %= 10;
 		}
-		_putchar('0' + n);
-		return (n);
+		_putchar('0' + N);
+		return (N);
 	}
-	else if (n < 0)
+	else if (N < 0)
 	{
-		n *= -1;
-		while (n >= 10)
+		N *= -1;
+		while (N >= 10)
 		{
-			n %= 10;
+			N %= 10;
 		}
-		_putchar('0' + n);
-		return (n);
+		_putchar('0' + N);
+		return (N);
 	}
 	else
 	{
-		_putchar('0' + n);
-		return (n);
+		_putchar('0' + N);
+		return (N);
 	}
 }
