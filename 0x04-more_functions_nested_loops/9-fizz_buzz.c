@@ -16,7 +16,7 @@ int main(void)
 
 	c = 1;
 	d = 100;
-	while (c < d)
+	while (c <= d)
 	{
 		if (c % 3 == 0 && c % 5 == 0)
 		{
