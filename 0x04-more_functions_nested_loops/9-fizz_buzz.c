@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - Entry point
@@ -29,7 +28,14 @@ int main(void)
 		}
 		else if (c % 5 == 0)
 		{
-			printf("Buzz ");
+			if (c == 100)
+			{
+				printf("Buzz");
+			}
+			else
+			{
+				printf("Buzz ");
+			}
 		}
 		else
 		{
