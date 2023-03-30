@@ -23,6 +23,6 @@ void print_rev(char *s)
 		{
 			_putchar(s[d]);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
