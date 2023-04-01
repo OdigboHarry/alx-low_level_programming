@@ -12,22 +12,25 @@ void puts2(char *str)
 	int c, g;
 
 	g = 0;
-	for (c = 0; str[c] != '\0'; c++)
+	if (str[g] != '\0')
 	{
-		if (c % 2 == 0)
+		for (c = 0; str[c] != '\0'; c++)
 		{
-			_putchar(str[c]);
+			if (c % 2 == 0)
+			{
+				_putchar(str[c]);
+			}
+			else
+			{
+				c++;
+				c--;
+			}
 		}
-		else
-		{
-			c++;
-			c--;
-		}
+		_putchar('\n');
 	}
-	if (str[g] == '\0')
+	else if (str[g] == '\0')
 	{
 		_putchar(str[g]);
 		g++;
 	}
-	_putchar('\n');
 }
