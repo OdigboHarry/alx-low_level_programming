@@ -9,8 +9,9 @@
  */
 void puts2(char *str)
 {
-	int c;
+	int c, g;
 
+	g = 0;
 	for (c = 0; str[c] != '\0'; c++)
 	{
 		if (c % 2 == 0)
@@ -23,4 +24,10 @@ void puts2(char *str)
 			c--;
 		}
 	}
+	if (str[g] == '\0')
+	{
+		g++;
+	}
+	_putchar('\n');
+	_putchar('\n');
 }
