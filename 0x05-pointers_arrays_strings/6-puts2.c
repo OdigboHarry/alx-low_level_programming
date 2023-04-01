@@ -26,8 +26,8 @@ void puts2(char *str)
 	}
 	if (str[g] == '\0')
 	{
+		_putchar(str[g]);
 		g++;
 	}
-	_putchar('\n');
 	_putchar('\n');
 }
