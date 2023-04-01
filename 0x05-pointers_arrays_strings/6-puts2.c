@@ -31,5 +31,6 @@ void puts2(char *str)
 	else if (str[g] == '\0')
 	{
 		_putchar(str[g]);
+		_putchar('\n');
 	}
 }
