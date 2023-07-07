@@ -2,6 +2,7 @@
 #include "main.h"
 
 void print_times_table2(int);
+void space(int);
 /**
  * print_times_table - prints times table ranging from 0 to n
  * @n: First operand
@@ -55,11 +56,34 @@ void print_times_table2(int n)
 			if (b < n)
 			{
 				putchar(',');
-				putchar(' ');
 			}
 			b++;
+			c = a * b;
+			space(c);
 		}
 		putchar('\n');
 		a++;
+	}
+}
+/**
+ * space - Provides space from the second number in each row of the times table
+ * @c: First operand
+ */
+void space(int c)
+{
+	if (c < 10)
+	{
+		putchar(' ');
+		putchar(' ');
+		putchar(' ');
+	}
+	else if (c > 9 && c < 100)
+	{
+		putchar(' ');
+		putchar(' ');
+	}
+	else if (c > 99)
+	{
+		putchar(' ');
 	}
 }
