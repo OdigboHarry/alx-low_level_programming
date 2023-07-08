@@ -12,14 +12,18 @@ int main(void)
 	a = 0, b = 0, c = 0, d = 0, e = 0;
 	limit = 0, limit1 = 1024 / 3, limit2 = 1024 / 5;
 
-	while (limit <= limit1)
+	while (limit < limit1)
 	{
 		a = a + 3;
+		if ((a % 5) == 0)
+		{
+			d = d - a;
+		}
 		d = d + a;
 		limit++;
 	}
 	limit = 0;
-	while (limit <= limit2)
+	while (limit < limit2)
 	{
 		b = b + 5;
 		e = e + b;
