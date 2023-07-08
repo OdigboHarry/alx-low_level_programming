@@ -28,10 +28,11 @@ void times_table(void)
  */
 int multip(int a)
 {
-	int b = 0;
-	int c = a;
-	int rem;
-	int first;
+	int b, c, d, rem, first;
+
+	b = 0;
+	c = a;
+	d = 0;
 
 	while (b <= 9)
 	{
@@ -47,10 +48,15 @@ int multip(int a)
 		}
 		else if (c < 10)
 		{
+			if (d > 0)
+			{
+				putchar(' ');
+			}
 			putchar('0' + c);
 			putchar(',');
 			putchar(' ');
 		}
+		d++;
 		b++;
 	}
 	return (0);
