@@ -13,8 +13,8 @@ int main(void)
 
 	while (d < 50)
 	{
-		printf("%ld", c);
 		c = a + b;
+		printf("%ld", c);
 		if (d == 49)
 		{
 			printf("\n");
@@ -24,8 +24,8 @@ int main(void)
 		{
 			printf(", ");
 		}
-		a = b;
-		b = c;
+		b = a;
+		a = c;
 		d++;
 	}
 	return (0);
