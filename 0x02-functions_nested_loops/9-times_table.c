@@ -43,8 +43,11 @@ int multip(int a)
 			first = divis(c);
 			putchar('0' + first);
 			putchar('0' + rem);
-			putchar(',');
-			putchar(' ');
+			if (d < 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 		else if (c < 10)
 		{
@@ -53,8 +56,11 @@ int multip(int a)
 				putchar(' ');
 			}
 			putchar('0' + c);
-			putchar(',');
-			putchar(' ');
+			if (d < 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 		d++;
 		b++;
