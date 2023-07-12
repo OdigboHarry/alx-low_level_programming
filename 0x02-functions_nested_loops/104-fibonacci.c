@@ -13,13 +13,14 @@ int main(void)
 	int n;
 
 	a = 0, b = 1, c = a + b, n = 0;
-	while (n < 99)
+	while (n < 98)
 	{
 		n++;
 		printf("%ld", c);
 		comma_space(n);
 		if (c > 200000000000000)
 		{
+			a = b, b = c, c = a + b;
 			n = separate_number(a, b, c, n);
 		}
 		else if (c < 200000000000000)
@@ -35,11 +36,11 @@ int main(void)
  */
 void comma_space(int n)
 {
-	if (n < 98)
+	if (n < 97)
 	{
 		printf(", ");
 	}
-	else if (n == 98)
+	else if (n == 97)
 	{
 		printf("\n");
 	}
@@ -65,7 +66,7 @@ int separate_number(unsigned long a, unsigned long b, unsigned long c, int n)
 	b = b % (e * 10000000);
 	c = d + e;
 	f = a + b;
-	while (n < 99)
+	while (n < 98)
 	{
 		if (f > 9999999)
 		{
