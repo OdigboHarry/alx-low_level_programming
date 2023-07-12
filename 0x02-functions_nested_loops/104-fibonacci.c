@@ -42,6 +42,7 @@ void comma_space(int n)
 	}
 	else if (n == 97)
 	{
+		printf("    ");
 		printf("\n");
 	}
 }
